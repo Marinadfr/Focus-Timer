@@ -1,0 +1,112 @@
+:root {
+  --blue: #95c7cd; /*background */
+  --green: #86a135; /* time box */
+  --yellow: #f2a20c;
+  --lightyellow: #f2b263; /*buttons*/
+  --pink: #f299b1;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --Spinnaker: "Spinnaker", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: solid 1px var(--blue);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--blue);
+}
+
+.pomodoro-container {
+  display: flex;
+  padding: 10px;
+  width: 50%;
+  flex-direction: column;
+  border: 1px solid --green;
+  border-radius: 15px;
+  background: var(--blue);
+}
+/* row container */
+.row-container {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+.clock-container {
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+#clock {
+  width: 50%;
+  text-align: center;
+  font-family: var(--Spinnaker);
+  font-size: 70px;
+  color: var(--white);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+}
+
+label {
+  text-transform: uppercase;
+  font-family: var(--Spinnaker);
+  font-weight: 600;
+  color: var(--white);
+}
+
+input {
+  padding: 5px;
+  width: 80px;
+  font-size: 20px;
+  font-family: var(--Spinnaker);
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.start-container {
+  justify-content: center;
+}
+
+#start-button {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  font-family: var(--Spinnaker);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--yellow);
+  border-radius: 6px;
+  background: var(--yellow);
+  outline: 0;
+  box-shadow: var(--green);
+}
+
+#start-button:hover {
+  background-color: var(--white);
+  font-weight: 600;
+  color: #f2b263;
+}
+
+.settings.container {
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
